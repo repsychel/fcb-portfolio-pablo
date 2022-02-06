@@ -1,0 +1,72 @@
+/*
+	ctrl + shift + / to comment 
+	CSS - cascading style sheet - used in styling/designing our webpage
+*/
+
+/*first rule - determine how u can style your webpage*/
+/* universal selector * */
+* {
+	font-family: "Roboto",sans-serif;
+}
+
+/*for smooth transition kapag pumunta sa links thru navbar*/
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* to change the headings' fonts */
+h1,h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+#landing {
+	height: 80vh;
+	/*displays contents of landing horizontally and vertically*/
+	display: flex;
+	/*pag-aalign ulit in one column nung mga items na na-grid dahil sa flex*/
+	flex-direction: column;
+	/*naiwan si image sa left, kaya ia-align sa center para maialign kasama nung ibang contents*/
+	align-items: center;
+	/*para maging centered horizontally and vertically, regardless the screen size*/
+	justify-content: center;
+}
+
+#gallery {
+	/*initially 70vh, +5vh to make gallery a little bigger*/
+	height: 75vh;
+	/*center contents of gallery horizontally and vertically*/
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+}
+
+ul {
+	/*remove bullet points*/
+	list-style: none;
+	/*remove the padding between bullet and text para ma-center yung text*/
+	padding: 0;
+}
+
+h2 {
+	color: #eb345b;
+}
+
+.tools {
+	height: 200px;
+	/*border thickness, solid, color */
+	border: 5px solid #f2f2f2;
+	/*space sa loob; 25 pixels, top bottom left right*/
+	padding: 25px;
+	/*space sa labas para paghiwalayin yung 2 boxes*/
+	margin: 20px;
+	/*relative; the width is 75% of the width of its parent element*/
+	width: 75%;
+}
